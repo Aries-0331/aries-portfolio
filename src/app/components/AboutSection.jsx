@@ -17,9 +17,9 @@ const AboutSection = () => {
 					className="place-self-center"
 				/>
 				<div className="text-white mt-6 place-self-center">
-					<h2 className="text-4xl font-bold mb-4">About Me</h2>
+					<h2 className="text-4xl font-bold mb-4 ">About Me</h2>
 					<p>{hero_data}</p>
-					<div className="flex gap-6 mt-2">
+					<div className="flex gap-6 mt-2 py-2">
 						{tab_data.map((data) => (
 							<TabButton
 								key={data.id}

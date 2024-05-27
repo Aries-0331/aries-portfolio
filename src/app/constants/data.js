@@ -11,13 +11,14 @@ export const tab_data = [
 		id: "skills",
 		label: "Skills",
 		contend: (
-			<ul>
-				<li>Node.js</li>
-				<li>Express</li>
-				<li>PostgreSQL</li>
-				<li>Sequelize</li>
+			<ul className="flex flex-col flex-wrap">
 				<li>JavaScript</li>
-				<li>React</li>
+				<li>TypeScript</li>
+				<li>React.js</li>
+				<li>Next.js</li>
+				<li>Redux</li>
+				<li>Zustand</li>
+				<li>Tailwind</li>
 			</ul>
 		),
 	},
@@ -55,7 +56,7 @@ export const project_data = [
 	{
 		id: "portfolio",
 		title: "Portfolio",
-		description: "My portfolio website",
+		description: "My first portfolio website driven by CRA and SCSS.",
 		cover: "/images/projects/portfolio.png",
 		github: "https://github.com/Aries-0331/portfolio",
 		preview: "https://aries-portfolio.vercel.app/",
@@ -72,7 +73,8 @@ export const project_data = [
 	{
 		id: "react-kit",
 		title: "React Kit",
-		description: "My portfolio website",
+		description:
+			"A collection of React components and hooks build with Tailwind.",
 		cover: "/images/projects/react-kit.png",
 		github: "https://github.com/Aries-0331/react-kits",
 		preview: "https://react-kits.vercel.app/",

@@ -70,7 +70,7 @@ const ContactSection = () => {
 					/>
 					<button
 						type="submit"
-						className="w-full bg-purple-500 text-gray-100 border-2 rounded-md border-purple-500 text-md py-1 mt-2"
+						className="w-full bg-[#CC8F6C] text-gray-100 border-2 rounded-md border-[#CC8F6C] text-md py-1 mt-2"
 					>
 						Send Message
 					</button>

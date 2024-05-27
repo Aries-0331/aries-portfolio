@@ -6,7 +6,7 @@ const ProjectCard = ({ imgUrl, title, description, githubUrl, previewUrl }) => {
 	return (
 		<div className="mt-6 text-white">
 			<div
-				className="relative h-52 md:h-72 rounded-xl group"
+				className="relative h-52 md:h-72 rounded-xl shadow-lg group"
 				style={{
 					background: `url(${imgUrl})`,
 					backgroundSize: "cover",

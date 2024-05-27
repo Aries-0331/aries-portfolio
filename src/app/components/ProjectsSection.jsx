@@ -5,9 +5,11 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectsSection = () => {
 	return (
-		<section className="mt-4" id="projects">
-			<h2 className="text-4xl text-white font-bold py-2 mb-4">My Projects</h2>
-			<div className="grid grid-cols-1 place-self-center sm:grid-cols-2 md:grid-cols-3">
+		<section className="mt-16" id="projects">
+			<h2 className="text-center text-4xl text-white font-bold py-8 mb-4">
+				My Projects
+			</h2>
+			<div className="grid grid-cols-1 place-self-center sm:grid-cols-2 md:grid-cols-3 gap-8">
 				{project_data.map((project) => (
 					<ProjectCard
 						key={project.id}

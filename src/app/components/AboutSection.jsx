@@ -8,7 +8,7 @@ const AboutSection = () => {
 	const [activeTab, setActiveTab] = useState("Skills");
 	return (
 		<section id="about">
-			<div className="grid grid-cols-1 sm:grid-cols2 mt-10">
+			<div className="mt-10 mb-10 md:grid md:grid-cols-2 md:gap-16 ">
 				<Image
 					src="/images/about-image.png"
 					alt="about me"

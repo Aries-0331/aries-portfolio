@@ -13,7 +13,7 @@ const MenuOverlay = ({ links }) => {
 					</li>
 				))}
 			</ul>
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center mb-4">
 				{social_data.map((social) => (
 					<SocialIcon key={social.id} url={social.url} icon={social.icon} />
 				))}

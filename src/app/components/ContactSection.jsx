@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const ContactSection = () => {
-	const [emailSubmitted, setEmailSubmitted] = useState(true);
+	const [emailSubmitted, setEmailSubmitted] = useState(false);
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
@@ -31,10 +31,12 @@ const ContactSection = () => {
 		}
 	};
 	return (
-		<section id="contact">
-			<h2 className="text-4xl text-white font-bold">Contact Me</h2>
+		<section id="contact" className="mt-16">
+			<h2 className="flex justify-center text-4xl text-white font-bold">
+				Contact Me
+			</h2>
 
-			<div className="flex flex-col items-center mb-6">
+			<div className="flex flex-col items-center my-6">
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="email" className="block text-sm text-white py-2">
 						Your Email

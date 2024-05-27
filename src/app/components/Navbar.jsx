@@ -1,18 +1,15 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import SocialIcon from "./SocialIcon";
+import { social_data } from "../constants/data";
 
 const navLinks = [
 	{
 		title: "Home",
 		path: "/",
-	},
-	{
-		title: "About",
-		path: "#about",
 	},
 	{
 		title: "Projects",
@@ -22,6 +19,10 @@ const navLinks = [
 		title: "Contact",
 		path: "#contact",
 	},
+	{
+		title: "About",
+		path: "#about",
+	},
 ];
 
 const Navbar = () => {
@@ -29,12 +30,6 @@ const Navbar = () => {
 	return (
 		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
 			<div className="flex flex-wrap justify-end items-center mx-auto px-4 py-4">
-				{/* <Link
-					href={"/"}
-					className="text-2xl md:text-5xl text-white font-semibold"
-				>
-					LOGO
-				</Link> */}
 				<div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (
 						<button
@@ -52,12 +47,20 @@ const Navbar = () => {
 						</button>
 					)}
 				</div>
-				<div className="menu hidden md:block md:w-full" id="navbar">
-					<ul className="flex justify-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+				<div
+					className="menu hidden md:flex md:justify-between md:w-full"
+					id="navbar"
+				>
+					<ul className="flex items-center ml-16 md:p-0 md:space-x-8 mt-0">
 						{navLinks.map((link, index) => (
 							<li key={index}>
 								<NavLink href={link.path} title={link.title} />
 							</li>
+						))}
+					</ul>
+					<ul className="flex items-center mr-16 md:p-0 md:space-x-8 mt-0">
+						{social_data.map((social) => (
+							<SocialIcon key={social.id} url={social.url} icon={social.icon} />
 						))}
 					</ul>
 				</div>

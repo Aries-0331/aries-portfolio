@@ -56,9 +56,17 @@ export const project_data = [
 	{
 		id: "portfolio",
 		title: "Portfolio",
-		description: "My first portfolio website driven by CRA and SCSS.",
+		description: "A portfolio website driven by CRA and SCSS.",
 		cover: "/images/projects/portfolio.png",
 		github: "https://github.com/Aries-0331/portfolio",
+		preview: "https://aries-portfolio.vercel.app/",
+	},
+	{
+		id: "next-portfolio",
+		title: "Next Portfolio",
+		description: "A portfolio website driven by Next.js, Tailwind and Vercel.",
+		cover: "/images/projects/next-portfolio.png",
+		github: "https://github.com/Aries-0331/next-portfolio",
 		preview: "https://aries-portfolio.vercel.app/",
 	},
 	{
@@ -71,11 +79,29 @@ export const project_data = [
 		preview: "https://brainwave-ruddy-six.vercel.app/",
 	},
 	{
+		id: "financial dashboard",
+		title: "Financial Dashboard",
+		description:
+			"A finacial dashboard build with Next.js, Tailwind and Postgres.",
+		cover: "/images/projects/dashboard.png",
+		github: "https://github.com/Aries-0331/nextjs-dashboard",
+		preview: "https://nextjs-dashboard-tau-two-25.vercel.app/",
+	},
+	{
 		id: "react-kit",
 		title: "React Kit",
 		description:
 			"A collection of React components and hooks build with Tailwind.",
 		cover: "/images/projects/react-kit.png",
+		github: "https://github.com/Aries-0331/react-kits",
+		preview: "https://react-kits.vercel.app/",
+	},
+	{
+		id: "prompthub",
+		title: "PromptHub",
+		description:
+			"AI powered prompts hub web application build with Next.js, Tailwind and MongoDB.",
+		cover: "/images/projects/prompthub.png",
 		github: "https://github.com/Aries-0331/react-kits",
 		preview: "https://react-kits.vercel.app/",
 	},

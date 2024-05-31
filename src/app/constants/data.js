@@ -1,7 +1,7 @@
-export const hero_data = `I am a frontend developer with a passion for creating interactive
-and responsive web applications. I have experience working with
-JavaScript, TypeScript, C++, React, Next.js, Redux, Zustand,
-Tailwind, Bootstrap, RESTful API, SQLite, Postgres, etc. <br />I am
+import Link from "next/link";
+
+export const hero_data = `I am a frontend developer with a passion for creating interactive and responsive web applications. I have experience working with
+JavaScript, TypeScript, C++, React, Next.js, Redux, Tailwind, etc. I am
 a quick learner and I am always looking to expand my knowledge and
 skill set. I am a team player and I am excited to work with others
 to create amazing applications.`;
@@ -27,12 +27,20 @@ export const tab_data = [
 		label: "Certificates",
 		contend: (
 			<ul>
+				<li>Programming with JavaScript</li>
+				<li>Basic React - Meta</li>
 				<li>Advanced React - Meta</li>
-				<li>Express</li>
-				<li>PostgreSQL</li>
-				<li>Sequelize</li>
-				<li>JavaScript</li>
-				<li>React</li>
+				<li>HTML and CSS in depth - Meta</li>
+				<li>Version Control - Meta</li>
+				<li>APIs - Meta</li>
+				<li>Python for Everyone - University of Michigan</li>
+				<li>Django Web Framework - Meta</li>
+				<Link
+					href="https://github.com/Aries-0331"
+					className=" text-slate-400 border-b-2 hover:text-white"
+				>
+					See more
+				</Link>
 			</ul>
 		),
 	},
@@ -41,12 +49,9 @@ export const tab_data = [
 		label: "Experiences",
 		contend: (
 			<ul>
-				<li>Advanced React - Meta</li>
-				<li>Express</li>
-				<li>PostgreSQL</li>
-				<li>Sequelize</li>
-				<li>JavaScript</li>
-				<li>React</li>
+				<li>Frontend Developer, Gen-strong, April,2023 -- Present</li>
+				<li>Software Engineer, Xylink, October,2020 -- April,2023</li>
+				<li>Software Engineer, VisionVera, July, 2017 -- September,2020</li>
 			</ul>
 		),
 	},

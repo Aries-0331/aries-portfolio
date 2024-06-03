@@ -72,16 +72,33 @@ export const project_data = [
 		description: "A portfolio website driven by Next.js, Tailwind and Vercel.",
 		cover: "/images/projects/next-portfolio.png",
 		github: "https://github.com/Aries-0331/next-portfolio",
-		preview: "https://aries-portfolio.vercel.app/",
+		preview: "https://aries-portfolio-1.vercel.app/",
 	},
 	{
 		id: "brainwave",
 		title: "Brainwave",
 		description:
 			"Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles.",
-		cover: "/images/projects/brainwave.png",
+		cover: "/images/projects/brainwave.WebP",
 		github: "https://github.com/Aries-0331/Brainwave",
 		preview: "https://brainwave-ruddy-six.vercel.app/",
+	},
+	{
+		id: "camping",
+		title: "CAMPING APP",
+		description: "A camping app build with React.js, Tailwind and Vite.",
+		cover: "/images/projects/travel.png",
+		github: "https://github.com/Aries-0331/travelapp",
+		preview: "https://travel-rouge-five.vercel.app/",
+	},
+	{
+		id: "nike",
+		title: "Nike",
+		description:
+			"A Nike website clone build with React.js, Tailwind CSS and Vite.",
+		cover: "/images/projects/nike.png",
+		github: "https://github.com/Aries-0331/Nike",
+		preview: "https://nike-two-blue.vercel.app/",
 	},
 	{
 		id: "financial dashboard",
@@ -91,24 +108,6 @@ export const project_data = [
 		cover: "/images/projects/dashboard.png",
 		github: "https://github.com/Aries-0331/nextjs-dashboard",
 		preview: "https://nextjs-dashboard-tau-two-25.vercel.app/",
-	},
-	{
-		id: "react-kit",
-		title: "React Kit",
-		description:
-			"A collection of React components and hooks build with Tailwind.",
-		cover: "/images/projects/react-kit.png",
-		github: "https://github.com/Aries-0331/react-kits",
-		preview: "https://react-kits.vercel.app/",
-	},
-	{
-		id: "prompthub",
-		title: "PromptHub",
-		description:
-			"AI powered prompts hub web application build with Next.js, Tailwind and MongoDB.",
-		cover: "/images/projects/prompthub.png",
-		github: "https://github.com/Aries-0331/react-kits",
-		preview: "https://react-kits.vercel.app/",
 	},
 ];
 

@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import Divider from "./components/Divider";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<Navbar />
 			<div className="md:max-w-[1000px] mt-24 mx-auto px-8 py-4">
 				<HeroSection />
+				<Divider />
 				<AboutSection />
 				<ProjectsSection />
 				<ContactSection />

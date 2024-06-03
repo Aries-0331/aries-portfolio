@@ -6,9 +6,10 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { social_data, tech_stack } from "../constants/data";
 import SocialIcon from "./SocialIcon";
-
+import { SiFramer } from "react-icons/si";
 const HeroSection = () => {
 	const morphAnimation = {
+		initial: { borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%" },
 		animate: {
 			borderRadius: [
 				"60% 40% 30% 70% / 60% 30% 70% 40%",
@@ -23,13 +24,13 @@ const HeroSection = () => {
 		},
 	};
 	return (
-		<section>
+		<section id="hero">
 			<div className="flex flex-col mt-8 items-center justify-center gap-8 md:flex-row md:justify-between">
 				{/* hero image */}
 				<div className="relative">
 					<motion.div
 						{...morphAnimation}
-						className="relative rounded-full w-[250px] h-[250px] md:w-[400px] md:h-[400px] overflow-hidden"
+						className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] overflow-hidden"
 					>
 						<Image
 							src="/images/coder.jpeg"
@@ -90,6 +91,7 @@ const HeroSection = () => {
 							alt="skill icon"
 						/>
 					))}
+					<SiFramer className=" text-white bg-black rounded-md p-1 w-8 h-8" />
 				</div>
 			</div>
 		</section>

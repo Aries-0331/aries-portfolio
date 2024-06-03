@@ -9,14 +9,7 @@ const AboutSection = () => {
 	return (
 		<section id="about">
 			<div className="mt-10 mb-10 md:grid md:grid-cols-2 md:gap-16 ">
-				<Image
-					src="/images/about-image.png"
-					alt="about me"
-					width={500}
-					height={500}
-					className="place-self-center"
-				/>
-				<div className="text-white mt-6 place-self-center">
+				<div className="text-black mt-6 place-self-center">
 					<h2 className="text-4xl font-bold mb-4 ">About Me</h2>
 					<p>{hero_data}</p>
 					<div className="flex gap-6 mt-2 py-2">

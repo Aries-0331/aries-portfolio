@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FiGithub, FaLinkedin } from "react-icons/fi";
 
 export const hero_data = `I am a frontend developer with a passion for creating interactive and responsive web applications. I have experience working with
 JavaScript, TypeScript, C++, React, Next.js, Redux, Tailwind, etc. I am
@@ -59,22 +60,6 @@ export const tab_data = [
 
 export const project_data = [
 	{
-		id: "portfolio",
-		title: "Portfolio",
-		description: "A portfolio website driven by CRA and SCSS.",
-		cover: "/images/projects/portfolio.png",
-		github: "https://github.com/Aries-0331/portfolio",
-		preview: "https://aries-portfolio.vercel.app/",
-	},
-	{
-		id: "next-portfolio",
-		title: "Next Portfolio",
-		description: "A portfolio website driven by Next.js, Tailwind and Vercel.",
-		cover: "/images/projects/next-portfolio.png",
-		github: "https://github.com/Aries-0331/next-portfolio",
-		preview: "https://aries-portfolio-1.vercel.app/",
-	},
-	{
 		id: "brainwave",
 		title: "Brainwave",
 		description:
@@ -100,26 +85,54 @@ export const project_data = [
 		github: "https://github.com/Aries-0331/Nike",
 		preview: "https://nike-two-blue.vercel.app/",
 	},
-	{
-		id: "financial dashboard",
-		title: "Financial Dashboard",
-		description:
-			"A finacial dashboard build with Next.js, Tailwind and Postgres.",
-		cover: "/images/projects/dashboard.png",
-		github: "https://github.com/Aries-0331/nextjs-dashboard",
-		preview: "https://nextjs-dashboard-tau-two-25.vercel.app/",
-	},
 ];
 
 export const social_data = [
 	{
 		id: "github",
 		url: "https://www.github.com/Aries-0331",
-		icon: "/github-icon.svg",
+		icon: "/github.svg",
 	},
 	{
 		id: "linkedin",
 		url: "https://www.linkedin.com/in/aries0331",
-		icon: "/linkedin-icon.svg",
+		icon: "/linkedin.svg",
+	},
+	{
+		id: "blog",
+		url: "https://www.urchinzhou.com",
+		icon: "/blog.svg",
+	},
+];
+
+const base_url = "https://skillicons.dev/icons?i=";
+export const tech_stack = [
+	{
+		label: "html",
+		url: `${base_url}html`,
+	},
+	{
+		label: "css",
+		url: `${base_url}css`,
+	},
+	{
+		label: "js",
+		url: `${base_url}js`,
+	},
+	{
+		label: "ts",
+		url: `${base_url}ts`,
+	},
+	{
+		label: "react",
+		url: `${base_url}react`,
+	},
+	{
+		label: "nextjs",
+		url: `${base_url}nextjs`,
+	},
+	{
+		label: "tailwind",
+		url: `${base_url}tailwind`,
 	},
 ];

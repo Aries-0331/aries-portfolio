@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import SocialIcon from "./SocialIcon";
-import { social_data } from "../constants/data";
+import Link from "next/link";
 
 const navLinks = [
 	{
@@ -28,39 +27,40 @@ const navLinks = [
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
-			<div className="flex flex-wrap justify-end items-center mx-auto px-4 py-4">
+		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF] bg-opacity-95 drop-shadow-md">
+			<div className="flex flex-wrap justify-end items-center mx-auto px-4 py-6">
 				<div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (
 						<button
 							onClick={() => setNavbarOpen(true)}
-							className="flex items-center px-3 py-2 border rounded border-slate-200  text-slate-200 hover:text-white hover:border-white "
+							className="flex items-center px-3 py-2 border rounded border-black  text-black hover:text-gray-500 hover:border-gray-500 "
 						>
 							<Bars3Icon className="h-5 w-5" />
 						</button>
 					) : (
 						<button
 							onClick={() => setNavbarOpen(false)}
-							className="flex items-center px-3 py-2 border border-slate-200 rounded text-slate-200 hover:text-white hover:border-white "
+							className="flex items-center px-3 py-2 border border-black rounded text-black hover:text-gray-500 hover:border-gray-500 "
 						>
 							<XMarkIcon className="h-5 w-5" />
 						</button>
 					)}
 				</div>
 				<div
-					className="menu hidden md:flex md:justify-between md:w-full"
+					className="menu hidden md:flex md:justify-between md:w-full mr-12"
 					id="navbar"
 				>
+					<Link
+						href="/"
+						className="ml-12 sm:text-2xl font-semibold font-poppins"
+					>
+						Aries.dev
+					</Link>
 					<ul className="flex items-center ml-16 md:p-0 md:space-x-8 mt-0">
 						{navLinks.map((link, index) => (
 							<li key={index}>
 								<NavLink href={link.path} title={link.title} />
 							</li>
-						))}
-					</ul>
-					<ul className="flex items-center mr-16 md:p-0 md:space-x-8 mt-0">
-						{social_data.map((social) => (
-							<SocialIcon key={social.id} url={social.url} icon={social.icon} />
 						))}
 					</ul>
 				</div>

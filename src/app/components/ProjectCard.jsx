@@ -13,7 +13,7 @@ const ProjectCard = ({ imgUrl, title, description, githubUrl, previewUrl }) => {
 					backgroundPosition: "center",
 				}}
 			>
-				<div className="overlay absolute items-center justify-center gap-6 left-0 top-0 w-full h-full bg-[#181818] opacity-0 hidden group-hover:flex group-hover:opacity-80 transition-full duration-500">
+				<div className="overlay absolute items-center justify-center gap-8 left-0 top-0 w-full h-full bg-[#181818] opacity-0 hidden group-hover:flex group-hover:opacity-80 transition-full duration-500">
 					<Link href={githubUrl}>
 						<CodeBracketIcon className="h-10 w-10 text-white" />
 					</Link>

@@ -1,7 +1,5 @@
 import React from "react";
 import NavLink from "./NavLink";
-import { social_data } from "../constants/data";
-import SocialIcon from "./SocialIcon";
 
 const MenuOverlay = ({ links }) => {
 	return (
@@ -13,11 +11,11 @@ const MenuOverlay = ({ links }) => {
 					</li>
 				))}
 			</ul>
-			<div className="flex justify-center items-center mb-4">
+			{/* <div className="flex justify-center items-center mb-4">
 				{social_data.map((social) => (
 					<SocialIcon key={social.id} url={social.url} icon={social.icon} />
 				))}
-			</div>
+			</div> */}
 		</div>
 	);
 };

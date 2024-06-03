@@ -3,22 +3,42 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 import { social_data, tech_stack } from "../constants/data";
 import SocialIcon from "./SocialIcon";
 
 const HeroSection = () => {
+	const morphAnimation = {
+		animate: {
+			borderRadius: [
+				"60% 40% 30% 70% / 60% 30% 70% 40%",
+				"30% 60% 70% 40% / 50% 60% 30% 60%",
+				"60% 40% 30% 70% / 60% 30% 70% 40%",
+			],
+		},
+		transition: {
+			ease: "easeInOut",
+			duration: 8,
+			repeat: Infinity,
+		},
+	};
 	return (
 		<section>
 			<div className="flex flex-col mt-8 items-center justify-center gap-8 md:flex-row md:justify-between">
 				{/* hero image */}
-				<div className="relative rounded-full w-[250px] h-[250px] md:w-[400px] md:h-[400px] ">
-					<Image
-						src="/images/coder.jpeg"
-						alt="hero image"
-						className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-						width={350}
-						height={350}
-					/>
+				<div className="relative">
+					<motion.div
+						{...morphAnimation}
+						className="relative rounded-full w-[250px] h-[250px] md:w-[400px] md:h-[400px] overflow-hidden"
+					>
+						<Image
+							src="/images/coder.jpeg"
+							alt="hero image"
+							width={400}
+							height={400}
+							className="object-cover w-full h-full"
+						/>
+					</motion.div>
 				</div>
 
 				{/* title and social links */}

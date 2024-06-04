@@ -1,17 +1,23 @@
 "use client";
-import React, { useState, useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { certificates } from "../constants/data";
 import Image from "next/image";
 
-const Experiences = () => {
+const Certificates = () => {
 	const ref = useRef(null);
-	const { scrollXProgress } = useScroll(ref);
+	const isInView = useInView(ref);
 	const duplicatedSlides = [...certificates, ...certificates];
 
 	return (
-		<section className="w-full">
-			<div className="h-[400px] flex flex-col">
+		<section className="w-full bg-white">
+			<motion.div
+				ref={ref}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: isInView ? 1 : 0 }}
+				transition={{ ease: "easeInOut", duration: 2 }}
+				className="h-[400px] flex flex-col"
+			>
 				<h2 className="text-4xl text-center font-semibold my-8 py-4">
 					How I Improve Myself?
 				</h2>
@@ -29,9 +35,9 @@ const Experiences = () => {
 						/>
 					))}
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };
 
-export default Experiences;
+export default Certificates;

@@ -4,18 +4,17 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import Divider from "./components/Divider";
-import Experiences from "./components/Experiences";
+import Certificates from "./components/Certificates";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center  bg-[#F9F9F9] ">
+		<main className="relative flex min-h-screen flex-col items-center">
 			<Navbar />
-			<div className="flex flex-col justify-center items-center max-w-[1440px] mt-24 mx-auto px-8 py-4">
+			<div className="absolute top-[80px] flex flex-col justify-center items-center w-full ">
 				<HeroSection />
 				<AboutSection />
 				<ProjectsSection />
-				<Experiences />
+				<Certificates />
 				<ContactSection />
 			</div>
 			<Footer />

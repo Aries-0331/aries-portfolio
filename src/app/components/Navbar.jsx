@@ -4,30 +4,15 @@ import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Link from "next/link";
-
-const navLinks = [
-	{
-		title: "Home",
-		path: "/",
-	},
-	{
-		title: "Projects",
-		path: "#projects",
-	},
-	{
-		title: "Contact",
-		path: "#contact",
-	},
-	{
-		title: "About",
-		path: "#about",
-	},
-];
+import { navLinks } from "../constants/data";
 
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF] bg-opacity-95 drop-shadow-md">
+		<nav
+			id="home"
+			className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF] bg-opacity-95 drop-shadow-md"
+		>
 			<div className="flex flex-wrap justify-end items-center mx-auto px-4 py-6">
 				<div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (

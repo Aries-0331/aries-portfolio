@@ -8,16 +8,16 @@ const AboutSection = () => {
 	const isInView = useInView(ref);
 
 	return (
-		<section id="about" className="mt-6 w-full">
+		<section id="about" className="w-full h-[calc(100vh-80px)] bg-white">
 			<motion.div
 				ref={ref}
 				initial={{ opacity: 0 }}
 				animate={{ opacity: isInView ? 1 : 0 }}
-				transition={{ ease: "easeInOut", duration: 2.5 }}
-				className="flex flex-col items-center"
+				transition={{ ease: "easeInOut", duration: 2 }}
+				className="flex flex-col justify-center items-center"
 			>
-				<div className="flex flex-col justify-center items-center text-black px-6">
-					<h2 className="text-4xl font-bold py-4">About Me</h2>
+				<div className="mt-16 flex flex-col justify-center items-center text-black px-6">
+					<h2 className="text-4xl font-bold py-4">About</h2>
 					<p>{hero_data}</p>
 				</div>
 			</motion.div>

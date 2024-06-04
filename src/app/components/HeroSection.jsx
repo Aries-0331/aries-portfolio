@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { social_data, tech_stack } from "../constants/data";
 import SocialIcon from "./SocialIcon";
 import { SiFramer } from "react-icons/si";
@@ -24,8 +24,11 @@ const HeroSection = () => {
 		},
 	};
 	return (
-		<section id="hero" className="md:max-w-[1000px] h-[600px]">
-			<div className="py-10 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between">
+		<section
+			id="hero"
+			className="relative flex flex-col justify-center items-center w-full h-[calc(100vh-80px)] bg-[#f9f9f9]"
+		>
+			<div className="pb-8 flex flex-col items-center justify-center max-w-[1240px] gap-8 md:flex-row md:justify-between">
 				{/* hero image */}
 				<div className="relative">
 					<motion.div
@@ -47,25 +50,23 @@ const HeroSection = () => {
 				<div className="text-center md:text-left md:items-center">
 					<h1 className="flex flex-col justify-between gap-2 text-white text-4xl md:text-6xl md:leading-normal font-bold">
 						<span className="text-black py-2">Hello, I&apos;m Aries </span>
-						<span className="h-[2.5rem] md:h-[3rem]">
-							<TypeAnimation
-								sequence={[
-									// Same substring at the start will only be typed out once, initially
-									1000, // wait 1s before replacing "Mice" with "Hamsters"
-									"Software Developer",
-									1000,
-									"Frontend Developer",
-									1000,
-									"Life-long learner",
-									1000,
-								]}
-								wrapper="span"
-								speed={50}
-								repeat={Infinity}
-								wordBreak="break-all"
-								className="text-2xl md:text-4xl text-[#414345]"
-							/>
-						</span>
+						<TypeAnimation
+							sequence={[
+								// Same substring at the start will only be typed out once, initially
+								1000, // wait 1s before replacing "Mice" with "Hamsters"
+								"Software Developer",
+								1000,
+								"Frontend Developer",
+								1000,
+								"Life-long learner",
+								1000,
+							]}
+							wrapper="span"
+							speed={50}
+							repeat={Infinity}
+							wordBreak="break-all"
+							className="h-[2.5rem] text-2xl md:text-4xl text-[#414345]"
+						/>
 					</h1>
 					<div className="mt-10">
 						<ul className="flex items-center justify-center gap-4 md:justify-start">

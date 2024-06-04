@@ -1,7 +1,25 @@
 import Link from "next/link";
-import { FiGithub, FaLinkedin } from "react-icons/fi";
 
-export const hero_data = `A passionate frontend developer based in Beijing, China.`;
+export const navLinks = [
+	{
+		title: "Home",
+		path: "#home",
+	},
+	{
+		title: "About",
+		path: "#about",
+	},
+	{
+		title: "Projects",
+		path: "#projects",
+	},
+	{
+		title: "Contact",
+		path: "#contact",
+	},
+];
+
+export const hero_data = `A passionate developer based in Beijing, China.`;
 
 export const tab_data = [
 	{

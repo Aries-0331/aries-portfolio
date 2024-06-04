@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { FiGithub, FaLinkedin } from "react-icons/fi";
 
-export const hero_data = `I am a frontend developer with a passion for creating interactive and responsive web applications. I have experience working with
-JavaScript, TypeScript, C++, React, Next.js, Redux, Tailwind, etc. I am
-a quick learner and I am always looking to expand my knowledge and
-skill set. I am a team player and I am excited to work with others
-to create amazing applications.`;
+export const hero_data = `A passionate frontend developer based in Beijing, China.`;
 
 export const tab_data = [
 	{
@@ -134,5 +130,45 @@ export const tech_stack = [
 	{
 		label: "tailwind",
 		url: `${base_url}tailwind`,
+	},
+];
+
+export const certificates = [
+	{
+		id: "html and css in depth",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787.jpeg",
+	},
+	{
+		id: "programming with javascript",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~E58NBL2U7UB7/CERTIFICATE_LANDING_PAGE~E58NBL2U7UB7.jpeg",
+	},
+	{
+		id: "version control",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XGWHDEHKZJEK/CERTIFICATE_LANDING_PAGE~XGWHDEHKZJEK.jpeg",
+	},
+	{
+		id: "react basic",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~W6L9TWVERJV3/CERTIFICATE_LANDING_PAGE~W6L9TWVERJV3.jpeg",
+	},
+	{
+		id: "advanced react",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~MZNDJNWMG5XR/CERTIFICATE_LANDING_PAGE~MZNDJNWMG5XR.jpeg",
+	},
+	{
+		id: "python for everyone",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~UMWGLMHRTWBU/CERTIFICATE_LANDING_PAGE~UMWGLMHRTWBU.jpeg",
+	},
+	{
+		id: "python data structures",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~5A3FCQ5RAT4B/CERTIFICATE_LANDING_PAGE~5A3FCQ5RAT4B.jpeg",
+	},
+	{
+		id: "apis",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~87PA5BKDY67P/CERTIFICATE_LANDING_PAGE~87PA5BKDY67P.jpeg",
+	},
+
+	{
+		id: "django web framework",
+		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~9KKKXL9VQQJR/CERTIFICATE_LANDING_PAGE~9KKKXL9VQQJR.jpeg",
 	},
 ];

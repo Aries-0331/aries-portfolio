@@ -24,8 +24,8 @@ const HeroSection = () => {
 		},
 	};
 	return (
-		<section id="hero">
-			<div className="flex flex-col mt-8 items-center justify-center gap-8 md:flex-row md:justify-between">
+		<section id="hero" className="md:max-w-[1000px] h-[600px]">
+			<div className="py-10 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between">
 				{/* hero image */}
 				<div className="relative">
 					<motion.div
@@ -38,6 +38,7 @@ const HeroSection = () => {
 							width={400}
 							height={400}
 							className="object-cover w-full h-full"
+							priority
 						/>
 					</motion.div>
 				</div>
@@ -45,26 +46,26 @@ const HeroSection = () => {
 				{/* title and social links */}
 				<div className="text-center md:text-left md:items-center">
 					<h1 className="flex flex-col justify-between gap-2 text-white text-4xl md:text-6xl md:leading-normal font-bold">
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#232526] to-[#414345] py-2">
-							Hello, I&apos;m Aries{" "}
+						<span className="text-black py-2">Hello, I&apos;m Aries </span>
+						<span className="h-[2.5rem] md:h-[3rem]">
+							<TypeAnimation
+								sequence={[
+									// Same substring at the start will only be typed out once, initially
+									1000, // wait 1s before replacing "Mice" with "Hamsters"
+									"Software Developer",
+									1000,
+									"Frontend Developer",
+									1000,
+									"Life-long learner",
+									1000,
+								]}
+								wrapper="span"
+								speed={50}
+								repeat={Infinity}
+								wordBreak="break-all"
+								className="text-2xl md:text-4xl text-[#414345]"
+							/>
 						</span>
-						<TypeAnimation
-							sequence={[
-								// Same substring at the start will only be typed out once, initially
-								1000, // wait 1s before replacing "Mice" with "Hamsters"
-								"Software Developer",
-								1000,
-								"Frontend Developer",
-								1000,
-								"Life-long learner",
-								1000,
-							]}
-							wrapper="span"
-							speed={50}
-							repeat={Infinity}
-							wordBreak="break-all"
-							className="text-2xl md:text-4xl text-[#414345]"
-						/>
 					</h1>
 					<div className="mt-10">
 						<ul className="flex items-center justify-center gap-4 md:justify-start">
@@ -79,7 +80,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 			</div>
-			<div className="mt-8 px-2 flex flex-col md:flex-row items-center justify-center gap-2 ">
+			<div className="px-2 flex flex-col md:flex-row items-center justify-center gap-2 ">
 				<p className="hidden md:block text-gray-500">Tech Stack |</p>
 				<div className="ml-4 flex gap-2">
 					{tech_stack.map((item) => (

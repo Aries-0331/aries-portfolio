@@ -14,10 +14,10 @@ const ProjectCard = ({ imgUrl, title, description, githubUrl, previewUrl }) => {
 				}}
 			>
 				<div className="overlay absolute items-center justify-center gap-8 left-0 top-0 w-full h-full bg-[#181818] opacity-0 hidden group-hover:flex group-hover:opacity-80 transition-full duration-500">
-					<Link href={githubUrl}>
+					<Link href={githubUrl} target="_blank">
 						<CodeBracketIcon className="h-10 w-10 text-white" />
 					</Link>
-					<Link href={previewUrl}>
+					<Link href={previewUrl} target="_blank">
 						<EyeIcon className="h-10 w-10 text-white" />
 					</Link>
 				</div>

@@ -78,7 +78,7 @@ export const project_data = [
 		title: "Brainwave",
 		description:
 			"Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles.",
-		cover: "/images/projects/brainwave.WebP",
+		cover: "/images/projects/brainwave.webp",
 		github: "https://github.com/Aries-0331/Brainwave",
 		preview: "https://brainwave-ruddy-six.vercel.app/",
 	},

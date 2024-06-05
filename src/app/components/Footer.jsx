@@ -1,6 +1,4 @@
 import React from "react";
-import { social_data } from "../constants/data";
-import SocialIcon from "./SocialIcon";
 
 const Footer = () => {
 	return (

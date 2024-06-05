@@ -26,7 +26,7 @@ const HeroSection = () => {
 	return (
 		<section
 			id="hero"
-			className="relative flex flex-col justify-center items-center w-full h-[calc(100vh-80px)] bg-[#f9f9f9]"
+			className="flex flex-col justify-center items-center w-full h-screen bg-[#f9f9f9]"
 		>
 			<div className="pb-8 flex flex-col items-center justify-center max-w-[1240px] gap-8 md:flex-row md:justify-between">
 				{/* hero image */}

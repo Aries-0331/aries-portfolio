@@ -7,7 +7,6 @@ import Image from "next/image";
 const Certificates = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref);
-	const duplicatedSlides = [...certificates, ...certificates];
 
 	return (
 		<section className="w-full bg-white">
@@ -22,7 +21,7 @@ const Certificates = () => {
 					How I Improve Myself?
 				</h2>
 				<div className="relative flex items-center w-full h-full overflow-x-scroll">
-					{duplicatedSlides.map((cert, index) => (
+					{certificates.map((cert, index) => (
 						<Image
 							key={index}
 							src={cert.url}
@@ -30,8 +29,8 @@ const Certificates = () => {
 							width={400}
 							height={300}
 							size={400}
-							className="mx-[-1.5rem]"
-							style={{ width: "auto", height: "auto" }}
+							className=""
+							style={{ width: "auto", height: "217" }}
 						/>
 					))}
 				</div>

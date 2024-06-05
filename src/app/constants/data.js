@@ -153,6 +153,10 @@ export const tech_stack = [
 
 export const certificates = [
 	{
+		id: "pmp",
+		url: "/images/pmp.png",
+	},
+	{
 		id: "html and css in depth",
 		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787.jpeg",
 	},

@@ -31,7 +31,7 @@ const ContactSection = () => {
 		}
 	};
 	return (
-		<section id="contact" className="mt-16">
+		<section id="contact" className="my-16">
 			<h2 className="flex justify-center text-4xl text-black font-bold">
 				Contact Me
 			</h2>

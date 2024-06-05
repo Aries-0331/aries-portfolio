@@ -35,10 +35,7 @@ const Navbar = () => {
 					className="menu hidden md:flex md:justify-between md:w-full mr-12"
 					id="navbar"
 				>
-					<Link
-						href="/"
-						className="ml-12 sm:text-2xl font-semibold font-poppins"
-					>
+					<Link href="/" className="ml-12 sm:text-2xl font-semibold ">
 						Aries.dev
 					</Link>
 					<ul className="flex items-center ml-16 md:p-0 md:space-x-8 mt-0">

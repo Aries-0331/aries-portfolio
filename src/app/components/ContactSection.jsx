@@ -31,12 +31,10 @@ const ContactSection = () => {
 		}
 	};
 	return (
-		<section id="contact" className="my-16">
-			<h2 className="flex justify-center text-4xl text-black font-bold">
-				Contact Me
-			</h2>
+		<section id="contact" className="my-10  flex flex-col justify-center">
+			<h2 className="text-center text-4xl text-black font-bold">Contact Me</h2>
 
-			<div className="flex flex-col items-center my-6">
+			<div className="items-center my-10 px-6">
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="email" className="block text-sm text-black py-2">
 						Your Email

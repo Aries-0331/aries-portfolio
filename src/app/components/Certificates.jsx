@@ -15,9 +15,9 @@ const Certificates = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: isInView ? 1 : 0 }}
 				transition={{ ease: "easeInOut", duration: 2 }}
-				className="h-[400px] flex flex-col"
+				className="mt-10 mb-20 px-6 flex flex-col"
 			>
-				<h2 className="text-4xl text-center font-semibold my-8 py-4">
+				<h2 className="text-4xl text-center font-semibold my-10 py-4">
 					How I Improve Myself?
 				</h2>
 				<div className="relative flex items-center w-full h-full overflow-x-scroll">

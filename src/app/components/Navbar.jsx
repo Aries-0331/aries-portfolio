@@ -13,8 +13,14 @@ const Navbar = () => {
 			id="home"
 			className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF] bg-opacity-95 drop-shadow-md"
 		>
-			<div className="flex flex-wrap justify-end items-center mx-auto px-4 py-6">
-				<div className="mobile-menu block md:hidden">
+			<div className="flex flex-wrap items-center mx-auto px-4 py-6">
+				<div className="mobile-menu w-full px-6 flex justify-between md:hidden ">
+					<Link
+						href="/"
+						className="flex items-center sm:text-2xl font-semibold "
+					>
+						Aries.dev
+					</Link>
 					{!navbarOpen ? (
 						<button
 							onClick={() => setNavbarOpen(true)}

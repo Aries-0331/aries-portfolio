@@ -6,12 +6,8 @@ const ProjectCard = ({ imgUrl, title, description, githubUrl, previewUrl }) => {
 	return (
 		<div className="mt-6 w-[400px] flex flex-col items-center ">
 			<div
-				className="relative w-full h-[300px] rounded-xl shadow-lg group overflow-hidden"
-				style={{
-					background: `url(${imgUrl})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-				}}
+				className="relative w-full aspect-[16/9] rounded-xl bg-cover bg-center shadow-lg group overflow-hidden"
+				style={{ backgroundImage: `url(${imgUrl})` }}
 			>
 				<div className="overlay absolute items-center justify-center gap-8 left-0 top-0 w-full h-full bg-[#181818] opacity-0 hidden group-hover:flex group-hover:opacity-80 transition-full duration-500">
 					<Link href={githubUrl} target="_blank">

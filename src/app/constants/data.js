@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 
 export const navLinks = [
@@ -77,7 +78,7 @@ export const project_data = [
 		id: "brainwave",
 		title: "Brainwave",
 		description:
-			"Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles.",
+			"Boost your brain power with interactive exercises. A cutting-edge platform built with React and Tailwind CSS.",
 		cover: "/images/projects/brainwave.webp",
 		github: "https://github.com/Aries-0331/Brainwave",
 		preview: "https://brainwave-ruddy-six.vercel.app/",
@@ -85,7 +86,8 @@ export const project_data = [
 	{
 		id: "camping",
 		title: "CAMPING APP",
-		description: "A camping app build with React.js, Tailwind and Vite.",
+		description:
+			"Navigate nature effortlessly with the power of technology. Driven by React.js, Tailwind and Vite.",
 		cover: "/images/projects/travel.png",
 		github: "https://github.com/Aries-0331/travelapp",
 		preview: "https://travel-rouge-five.vercel.app/",
@@ -94,7 +96,7 @@ export const project_data = [
 		id: "nike",
 		title: "Nike",
 		description:
-			"A Nike website clone build with React.js, Tailwind CSS and Vite.",
+			"Experience the iconic Nike shopping interface through this meticulously crafted clone, built using React, Tailwind and Vite.",
 		cover: "/images/projects/nike.png",
 		github: "https://github.com/Aries-0331/Nike",
 		preview: "https://nike-two-blue.vercel.app/",
@@ -122,32 +124,37 @@ export const social_data = [
 const base_url = "https://skillicons.dev/icons?i=";
 export const tech_stack = [
 	{
-		label: "html",
-		url: `${base_url}html`,
+		label: "HTML",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg",
 	},
 	{
-		label: "css",
-		url: `${base_url}css`,
+		label: "CSS",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg",
+	},
+
+	{
+		label: "JavaScript",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
 	},
 	{
-		label: "js",
-		url: `${base_url}js`,
+		label: "TypeScript",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
 	},
 	{
-		label: "ts",
-		url: `${base_url}ts`,
+		label: "React",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
 	},
 	{
-		label: "react",
-		url: `${base_url}react`,
+		label: "NextJS",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
 	},
 	{
-		label: "nextjs",
-		url: `${base_url}nextjs`,
+		label: "Tailwind",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
 	},
 	{
-		label: "tailwind",
-		url: `${base_url}tailwind`,
+		label: "Framer Motion",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
 	},
 ];
 

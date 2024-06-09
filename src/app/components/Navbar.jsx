@@ -15,10 +15,7 @@ const Navbar = () => {
 		>
 			<div className="flex flex-wrap items-center mx-auto px-4 py-6">
 				<div className="mobile-menu w-full px-6 flex justify-between md:hidden ">
-					<Link
-						href="/"
-						className="flex items-center sm:text-2xl font-semibold "
-					>
+					<Link href="/" className="flex items-center text-2xl font-semibold ">
 						Aries.dev
 					</Link>
 					{!navbarOpen ? (

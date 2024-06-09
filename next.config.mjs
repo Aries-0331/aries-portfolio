@@ -4,14 +4,14 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: "https",
-				hostname: "skillicons.dev",
+				hostname: "s3.amazonaws.com",
 			},
 			{
 				protocol: "https",
-				hostname: "s3.amazonaws.com",
+				hostname: "cdn.jsdelivr.net",
 			},
 		],
-		dangerouslyAllowSVG: true,
+		// dangerouslyAllowSVG: true,
 	},
 };
 

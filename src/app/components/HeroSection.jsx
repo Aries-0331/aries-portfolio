@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion, useInView } from "framer-motion";
 import { social_data, tech_stack } from "../constants/data";
 import SocialIcon from "./SocialIcon";
-import { SiFramer } from "react-icons/si";
+import Icon from "./Icon";
 const HeroSection = () => {
 	const morphAnimation = {
 		initial: { borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%" },
@@ -83,17 +83,10 @@ const HeroSection = () => {
 			</div>
 			<div className="px-2 flex flex-col md:flex-row items-center justify-center gap-2 ">
 				<p className="hidden md:block text-gray-500">Tech Stack |</p>
-				<div className="ml-4 flex gap-2">
+				<div className="ml-4 flex gap-3">
 					{tech_stack.map((item) => (
-						<Image
-							key={item.label}
-							src={item.url}
-							width={32}
-							height={32}
-							alt="skill icon"
-						/>
+						<Icon key={item.label} label={item.label} url={item.url} />
 					))}
-					<SiFramer className=" text-white bg-black rounded-md p-1 w-8 h-8" />
 				</div>
 			</div>
 		</section>

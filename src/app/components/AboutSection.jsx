@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { hero_data } from "../constants/data";
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
 
 const AboutSection = () => {
 	const ref = useRef(null);
@@ -12,10 +11,10 @@ const AboutSection = () => {
 		<section id="about" className="w-full flex flex-col items-center">
 			<motion.div
 				ref={ref}
-				initial={{ x: "150%" }}
-				animate={{ x: isInView ? 0 : "150%" }}
+				initial={{ x: "100%" }}
+				animate={{ x: isInView ? 0 : "100%" }}
 				transition={{ ease: "easeInOut", duration: 1 }}
-				className="pt-10 w-full lg:w-[50%] relative flex flex-col items-start  gap-8 px-6 text-black"
+				className="pt-10 w-full md:w-[50%] relative flex flex-col items-start  gap-8 px-6 text-black"
 			>
 				<div className="flex flex-col gap-4">
 					<h2 className="text-4xl font-bold ">About</h2>

@@ -116,12 +116,11 @@ export const social_data = [
 	},
 	{
 		id: "blog",
-		url: "https://www.urchinzhou.com",
+		url: "https://urchinzhou.com",
 		icon: "/blog.svg",
 	},
 ];
 
-const base_url = "https://skillicons.dev/icons?i=";
 export const tech_stack = [
 	{
 		label: "HTML",

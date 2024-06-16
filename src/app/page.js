@@ -5,7 +5,9 @@ import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import Certificates from "./components/Certificates";
+import Slider from "./components/Slider";
 import { Montserrat, Luxurious_Roman } from "next/font/google";
+import { certificates } from "./constants/data";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -31,6 +33,7 @@ export default function Home() {
 				<AboutSection />
 				<ProjectsSection />
 				<Certificates />
+				<Slider images={certificates} />
 				<ContactSection />
 			</div>
 			<Footer />

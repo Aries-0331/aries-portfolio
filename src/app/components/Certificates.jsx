@@ -1,22 +1,11 @@
-"use client";
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
 import { certificates } from "../constants/data";
 import Image from "next/image";
 
 const Certificates = () => {
-	const ref = useRef(null);
-	const isInView = useInView(ref);
-
 	return (
-		<section className="w-full bg-white">
-			<motion.div
-				ref={ref}
-				initial={{ opacity: 0 }}
-				animate={{ opacity: isInView ? 1 : 0 }}
-				transition={{ ease: "easeInOut", duration: 2 }}
-				className="mt-10 mb-20 px-6 flex flex-col"
-			>
+		<section className="w-full h-screen bg-white">
+			<div className="mt-10 mb-20 px-6 flex flex-col">
 				<h2 className="text-4xl text-center font-semibold my-10 py-4">
 					How I Improve Myself?
 				</h2>
@@ -34,7 +23,7 @@ const Certificates = () => {
 						/>
 					))}
 				</div>
-			</motion.div>
+			</div>
 		</section>
 	);
 };

@@ -15,7 +15,7 @@ export const Slider3D = ({ data }) => {
 	return (
 		<div className="w-full h-[500px] relative flex justify-center">
 			<div
-				className="absolute top-1/4 w-[200px] h-[160px] animate-autoRun"
+				className="absolute top-[100px] w-[200px] h-[160px] animate-autoRun"
 				style={{
 					transformStyle: "preserve-3d",
 					transform: "perspective(1200px)",

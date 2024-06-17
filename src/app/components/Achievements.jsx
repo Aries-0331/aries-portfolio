@@ -2,7 +2,7 @@
 import React from "react";
 import { Slider, Slider3D } from "./Slider";
 import { certificates } from "../constants/data";
-import { useWindowSize } from "../utils/useBreakPoint.js";
+import { useWindowSize } from "../../hooks";
 
 const Achievements = () => {
 	const { width } = useWindowSize();

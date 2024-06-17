@@ -8,7 +8,7 @@ const AboutSection = () => {
 	const isInView = useInView(ref);
 
 	return (
-		<section id="about" className="w-full flex flex-col items-center mt-10">
+		<section id="about" className="w-full flex flex-col items-center pt-20">
 			<motion.div
 				ref={ref}
 				initial={{ opacity: 1 }}

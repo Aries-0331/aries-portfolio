@@ -1,34 +1,49 @@
 import Image from "next/image";
 import React from "react";
-import { certificates } from "../constants/data";
 
-const Slider = () => {
+export const Slider = ({ data }) => {
 	return (
-		<div className="banner w-full h-screen relative flex justify-center items-center">
+		<div className="w-full flex items-left animate-autoFlow">
+			{data.map((item, index) => (
+				<div key={index} className="w-[350px] h-[260px]">
+					<Image
+						src={item.url}
+						fill={true}
+						sizes="(max-width: 350px) 33vw"
+						alt="cert"
+					/>
+				</div>
+			))}
+		</div>
+	);
+};
+
+export const Slider3D = ({ data }) => {
+	return (
+		<div className="w-full flex-1 relative flex justify-center items-center">
 			<div
-				className="absolute w-[250px] h-[200px] top-[10%] animate-autoRun"
+				className="absolute w-[250px] h-[200px] top-[15%] animate-autoRun"
 				style={{
 					transformStyle: "preserve-3d",
 					transform: "perspective(1000px)",
 				}}
 			>
-				{certificates.map((cert, index) => (
+				{data.map((item, index) => (
 					<div
 						key={index}
 						className="absolute inset-0"
 						style={{
 							transformStyle: "preserve-3d",
 							transform: `rotateY(${
-								index * (360 / certificates.length)
+								index * (360 / data.length)
 							}deg) translateZ(450px)`,
 						}}
 					>
 						<Image
-							src={cert.url}
+							src={item.url}
+							fill={true}
+							sizes="(max-width: 400px) 50vw"
 							alt="cert"
-							width={250}
-							height={200}
-							objectFit="cover"
 						/>
 					</div>
 				))}
@@ -36,5 +51,3 @@ const Slider = () => {
 		</div>
 	);
 };
-
-export default Slider;

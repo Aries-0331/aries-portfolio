@@ -15,6 +15,10 @@ export const navLinks = [
 		path: "#projects",
 	},
 	{
+		title: "Achieves",
+		path: "#achieve",
+	},
+	{
 		title: "Contact",
 		path: "#contact",
 	},
@@ -164,38 +168,34 @@ export const certificates = [
 	},
 	{
 		id: "2",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787.jpeg",
+		url: "/images/html_css_in_depth.png",
 	},
 	{
 		id: "3",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~E58NBL2U7UB7/CERTIFICATE_LANDING_PAGE~E58NBL2U7UB7.jpeg",
+		url: "/images/react_basic.png",
 	},
 	{
 		id: "4",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XGWHDEHKZJEK/CERTIFICATE_LANDING_PAGE~XGWHDEHKZJEK.jpeg",
+		url: "/images/advanced_react.png",
 	},
 	{
 		id: "5",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~W6L9TWVERJV3/CERTIFICATE_LANDING_PAGE~W6L9TWVERJV3.jpeg",
+		url: "/images/version_control.png",
 	},
 	{
 		id: "6",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~MZNDJNWMG5XR/CERTIFICATE_LANDING_PAGE~MZNDJNWMG5XR.jpeg",
+		url: "/images/apis.png",
 	},
 	{
 		id: "7",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~UMWGLMHRTWBU/CERTIFICATE_LANDING_PAGE~UMWGLMHRTWBU.jpeg",
+		url: "/images/python_data_structure.png",
 	},
 	{
 		id: "8",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~5A3FCQ5RAT4B/CERTIFICATE_LANDING_PAGE~5A3FCQ5RAT4B.jpeg",
+		url: "/images/python_for_everybody.png",
 	},
 	{
 		id: "9",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~87PA5BKDY67P/CERTIFICATE_LANDING_PAGE~87PA5BKDY67P.jpeg",
-	},
-	{
-		id: "10",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~9KKKXL9VQQJR/CERTIFICATE_LANDING_PAGE~9KKKXL9VQQJR.jpeg",
+		url: "/images/django_framework.png",
 	},
 ];

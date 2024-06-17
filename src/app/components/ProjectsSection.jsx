@@ -14,7 +14,7 @@ const ProjectsSection = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: isInView ? 1 : 0 }}
 				transition={{ ease: "easeInOut", duration: 2 }}
-				className="my-10 flex flex-col justify-center items-center w-full px-6"
+				className="flex flex-col justify-center items-center w-full my-20"
 			>
 				<h2 className="text-4xl text-black font-bold py-8">Projects</h2>
 				<div className="flex flex-wrap gap-6 justify-center">

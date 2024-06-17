@@ -17,15 +17,24 @@ module.exports = {
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 			animation: {
-				autoRun: "autoRun 30s linear infinite",
+				autoRun: "autoRun 40s linear infinite",
+				autoFlow: "autoFlow 30s linear infinite",
 			},
 			keyframes: {
 				autoRun: {
 					from: {
-						transform: "perspective(1000px) rotateX(-12deg) rotateY(0deg)",
+						transform: "perspective(1000px) rotateX(-10deg) rotateY(0deg)",
 					},
 					to: {
-						transform: "perspective(1000px) rotateX(-12deg) rotateY(360deg)",
+						transform: "perspective(1000px) rotateX(-10deg) rotateY(360deg)",
+					},
+				},
+				autoFlow: {
+					"0%": {
+						transform: "translate-x-0",
+					},
+					"100%": {
+						transform: "translate-x(-100%)",
 					},
 				},
 			},

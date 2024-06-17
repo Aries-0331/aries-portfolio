@@ -5,7 +5,7 @@ import MenuOverlay from "./MenuOverlay";
 import Link from "next/link";
 import { navLinks } from "../constants/data";
 
-const NavBar = () => {
+const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
 		<nav
@@ -60,4 +60,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default Navbar;

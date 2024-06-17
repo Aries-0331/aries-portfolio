@@ -1,5 +1,5 @@
 import {
-	NavBar,
+	Navbar,
 	Hero,
 	About,
 	Projects,
@@ -27,7 +27,7 @@ export default function Home() {
 		<main
 			className={`relative flex min-h-screen flex-col items-center ${montserrat.className} ${luxurious_roman.className}`}
 		>
-			<NavBar />
+			<Navbar />
 			<div className="flex flex-col justify-center items-center w-full bg-[#f9f9f9]">
 				<Hero />
 				<About />

@@ -3,16 +3,9 @@ import React from "react";
 
 export const Slider = ({ data }) => {
 	return (
-		<div className="w-full flex items-left animate-autoFlow">
+		<div className="w-full py-8 flex gap-6 items-center overflow-x-scroll">
 			{data.map((item, index) => (
-				<div key={index} className="w-[350px] h-[260px]">
-					<Image
-						src={item.url}
-						fill={true}
-						sizes="(max-width: 350px) 33vw"
-						alt="cert"
-					/>
-				</div>
+				<Image key={index} src={item.url} width={360} height={270} alt="cert" />
 			))}
 		</div>
 	);
@@ -20,12 +13,12 @@ export const Slider = ({ data }) => {
 
 export const Slider3D = ({ data }) => {
 	return (
-		<div className="w-full flex-1 relative flex justify-center items-center">
+		<div className="w-full h-[500px] relative flex justify-center">
 			<div
-				className="absolute w-[250px] h-[200px] top-[15%] animate-autoRun"
+				className="absolute top-1/4 w-[200px] h-[160px] animate-autoRun"
 				style={{
 					transformStyle: "preserve-3d",
-					transform: "perspective(1000px)",
+					transform: "perspective(1200px)",
 				}}
 			>
 				{data.map((item, index) => (
@@ -36,7 +29,7 @@ export const Slider3D = ({ data }) => {
 							transformStyle: "preserve-3d",
 							transform: `rotateY(${
 								index * (360 / data.length)
-							}deg) translateZ(450px)`,
+							}deg) translateZ(350px)`,
 						}}
 					>
 						<Image

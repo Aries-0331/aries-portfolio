@@ -1,5 +1,5 @@
 import React from "react";
-import NavLink from "./NavLink";
+import Link from "next/link";
 
 const MenuOverlay = ({ links }) => {
 	return (
@@ -7,15 +7,10 @@ const MenuOverlay = ({ links }) => {
 			<ul className="flex flex-col py-4 items-center">
 				{links.map((link, index) => (
 					<li key={index}>
-						<NavLink href={link.path} title={link.title} />
+						<Link href={link.path}>{link.title}</Link>
 					</li>
 				))}
 			</ul>
-			{/* <div className="flex justify-center items-center mb-4">
-				{social_data.map((social) => (
-					<SocialIcon key={social.id} url={social.url} icon={social.icon} />
-				))}
-			</div> */}
 		</div>
 	);
 };

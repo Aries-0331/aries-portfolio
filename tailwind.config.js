@@ -16,8 +16,28 @@ module.exports = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
-			transform: {},
+			animation: {
+				autoRun: "autoRun 40s linear infinite",
+				autoFlow: "autoFlow 30s linear infinite",
+			},
+			keyframes: {
+				autoRun: {
+					from: {
+						transform: "perspective(1000px) rotateX(-10deg) rotateY(0deg)",
+					},
+					to: {
+						transform: "perspective(1000px) rotateX(-10deg) rotateY(360deg)",
+					},
+				},
+				autoFlow: {
+					"0%": {
+						transform: "translate-x-0",
+					},
+					"100%": {
+						transform: "translate-x(-100%)",
+					},
+				},
+			},
 		},
 	},
-	plugins: [],
 };

@@ -15,6 +15,10 @@ export const navLinks = [
 		path: "#projects",
 	},
 	{
+		title: "Achieves",
+		path: "#achieve",
+	},
+	{
 		title: "Contact",
 		path: "#contact",
 	},
@@ -159,44 +163,39 @@ export const tech_stack = [
 
 export const certificates = [
 	{
-		id: "pmp",
+		id: "1",
 		url: "/images/pmp.png",
 	},
 	{
-		id: "html and css in depth",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787/CERTIFICATE_LANDING_PAGE~TZCC3MNNQ787.jpeg",
+		id: "2",
+		url: "/images/html_css_in_depth.png",
 	},
 	{
-		id: "programming with javascript",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~E58NBL2U7UB7/CERTIFICATE_LANDING_PAGE~E58NBL2U7UB7.jpeg",
+		id: "3",
+		url: "/images/react_basic.png",
 	},
 	{
-		id: "version control",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XGWHDEHKZJEK/CERTIFICATE_LANDING_PAGE~XGWHDEHKZJEK.jpeg",
+		id: "4",
+		url: "/images/advanced_react.png",
 	},
 	{
-		id: "react basic",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~W6L9TWVERJV3/CERTIFICATE_LANDING_PAGE~W6L9TWVERJV3.jpeg",
+		id: "5",
+		url: "/images/version_control.png",
 	},
 	{
-		id: "advanced react",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~MZNDJNWMG5XR/CERTIFICATE_LANDING_PAGE~MZNDJNWMG5XR.jpeg",
+		id: "6",
+		url: "/images/apis.png",
 	},
 	{
-		id: "python for everyone",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~UMWGLMHRTWBU/CERTIFICATE_LANDING_PAGE~UMWGLMHRTWBU.jpeg",
+		id: "7",
+		url: "/images/python_data_structure.png",
 	},
 	{
-		id: "python data structures",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~5A3FCQ5RAT4B/CERTIFICATE_LANDING_PAGE~5A3FCQ5RAT4B.jpeg",
+		id: "8",
+		url: "/images/python_for_everybody.png",
 	},
 	{
-		id: "apis",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~87PA5BKDY67P/CERTIFICATE_LANDING_PAGE~87PA5BKDY67P.jpeg",
-	},
-
-	{
-		id: "django web framework",
-		url: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~9KKKXL9VQQJR/CERTIFICATE_LANDING_PAGE~9KKKXL9VQQJR.jpeg",
+		id: "9",
+		url: "/images/django_framework.png",
 	},
 ];

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Link from "next/link";
@@ -44,7 +43,12 @@ const Navbar = () => {
 					<ul className="flex items-center ml-16 md:p-0 md:space-x-8 mt-0">
 						{navLinks.map((link, index) => (
 							<li key={index}>
-								<NavLink href={link.path} title={link.title} />
+								<Link
+									href={link.path}
+									className="block px-3 py-4 text-[#2d2e32] sm:text-xl rounded md:p-0 hover:text-gray-500 font-semibold"
+								>
+									{link.title}
+								</Link>
 							</li>
 						))}
 					</ul>

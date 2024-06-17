@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { social_data, tech_stack } from "../constants/data";
 import SocialIcon from "./SocialIcon";
 import Icon from "./Icon";

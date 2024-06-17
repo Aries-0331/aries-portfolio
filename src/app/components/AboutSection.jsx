@@ -8,11 +8,11 @@ const AboutSection = () => {
 	const isInView = useInView(ref);
 
 	return (
-		<section id="about" className="w-full flex flex-col items-center mt-10">
+		<section id="about" className="w-full flex flex-col items-center pt-20">
 			<motion.div
 				ref={ref}
-				initial={{ x: "100%" }}
-				animate={{ x: isInView ? 0 : "100%" }}
+				initial={{ opacity: 1 }}
+				animate={{ opacity: isInView ? 1 : 0 }}
 				transition={{ ease: "easeInOut", duration: 1 }}
 				className=" w-full md:w-[50%] relative flex flex-col items-start  gap-8 px-6 text-black"
 			>

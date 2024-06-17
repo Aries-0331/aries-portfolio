@@ -1,10 +1,12 @@
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
-import Certificates from "./components/Certificates";
+import {
+	Navbar,
+	Hero,
+	About,
+	Projects,
+	Contact,
+	Footer,
+	Achievements,
+} from "./components";
 import { Montserrat, Luxurious_Roman } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -27,11 +29,11 @@ export default function Home() {
 		>
 			<Navbar />
 			<div className="flex flex-col justify-center items-center w-full bg-[#f9f9f9]">
-				<HeroSection />
-				<AboutSection />
-				<ProjectsSection />
-				<Certificates />
-				<ContactSection />
+				<Hero />
+				<About />
+				<Projects />
+				<Achievements />
+				<Contact />
 			</div>
 			<Footer />
 		</main>

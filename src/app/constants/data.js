@@ -89,7 +89,7 @@ export const project_data = [
 	},
 	{
 		id: "camping",
-		title: "CAMPING APP",
+		title: "Camping",
 		description:
 			"Navigate nature effortlessly with the power of technology. Driven by React.js, Tailwind and Vite.",
 		cover: "/images/projects/travel.png",

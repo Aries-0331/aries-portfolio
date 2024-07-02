@@ -7,7 +7,7 @@ import { useWindowSize } from "../../hooks";
 const Achievements = () => {
 	const { width } = useWindowSize();
 	return (
-		<section id="achieve" className="w-full pt-16 bg-white">
+		<section id="achieve" className="w-full pt-16 bg-[#f9f9f9]">
 			<div className="px-6 flex flex-col justify-evenly">
 				<h2 className="text-4xl text-center font-semibold py-10">
 					How I Improve Myself?

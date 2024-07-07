@@ -120,7 +120,7 @@ export const social_data = [
 	},
 	{
 		id: "blog",
-		url: "https://urchinzhou.com",
+		url: "https://arieszhou.xyz",
 		icon: "/blog.svg",
 	},
 ];

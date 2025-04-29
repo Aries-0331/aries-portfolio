@@ -159,6 +159,18 @@ export const tech_stack = [
 		label: "Framer Motion",
 		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
 	},
+	{
+		label: "NodeJS",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+	},
+	{
+		label: "ExpressJS",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+	},
+	{
+		label: "MongoDB",
+		url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+	}
 ];
 
 export const certificates = [

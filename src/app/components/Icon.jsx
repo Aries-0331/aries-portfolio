@@ -8,7 +8,7 @@ const Icon = ({ label, url }) => {
 			<div className="absolute opacity-0 bottom-full mb-2 text-xs text-gray-500 transition-opacity group-hover:opacity-100 duration-1000">
 				{label}
 			</div>
-			<motion.div key={label} whileHover={{ scale: 1.2 }} className="">
+			<motion.div key={label} whileHover={{ scale: 1.2 }}>
 				<Image
 					src={url}
 					width={36}

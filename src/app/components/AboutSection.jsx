@@ -50,7 +50,8 @@ const AboutSection = () => {
 				</div>
 				<div className="flex flex-col gap-2">
 					<h3 className="text-xl font-bold">Career</h3>
-					<p>April, 2023 to Present ---- Frontend Developer</p>
+					<p>April, 2024 to Present ---- Web Developer</p>
+					<p>April, 2023 to July,2024 ---- Web Developer</p>
 					<p>October, 2020 to April,2023 ---- Software Engineer</p>
 					<p>April, 2017 to October,2020 ---- Software Engineer</p>
 				</div>

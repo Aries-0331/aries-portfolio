@@ -11,10 +11,12 @@ const AboutSection = () => {
 		<section id="about" className="w-full flex flex-col items-center pt-20">
 			<motion.div
 				ref={ref}
-				initial={{ opacity: 1 }}
+				initial={{ opacity: 0 }}
 				animate={{ opacity: isInView ? 1 : 0 }}
-				transition={{ ease: "easeInOut", duration: 1 }}
+				transition={{ ease: "easeInOut", duration: 0.5, delay: 0.2 }}
 				className=" w-full md:w-[50%] relative flex flex-col items-start  gap-8 px-6 text-black"
+				role="article"
+				aria-label="About section"
 			>
 				<div className="flex flex-col gap-4">
 					<h2 className="text-4xl font-bold ">About</h2>
@@ -48,13 +50,29 @@ const AboutSection = () => {
 						skills.
 					</p>
 				</div>
-				<div className="flex flex-col gap-2">
+
+				<div className="flex flex-col gap-2 w-full">
 					<h3 className="text-xl font-bold">Career</h3>
-					<p>April, 2024 to Present ---- Web Developer</p>
-					<p>April, 2023 to July,2024 ---- Web Developer</p>
-					<p>October, 2020 to April,2023 ---- Software Engineer</p>
-					<p>April, 2017 to October,2020 ---- Software Engineer</p>
+					<ul className="space-y-4 w-full" role="list">
+						{[
+							["April, 2023", "Present", "Web Developer"],
+							["October, 2020", "April, 2023", "Software Engineer"],
+							["April, 2017", "October, 2020", "Software Engineer"],
+						].map(([start, end, title], index) => (
+							<li
+								key={index}
+								className="flex justify-between items-center w-full py-2 border-b border-gray-200"
+								role="listitem"
+							>
+								<time className="font-medium">{start}</time>
+								<span className="mx-4">-</span>
+								<time className="font-medium">{end}</time>
+								<span className="flex-1 text-right font-semibold">{title}</span>
+							</li>
+						))}
+					</ul>
 				</div>
+
 				<div className="w-full flex justify-end">
 					<p className="py-6 text-slate-500 text-center lg:text-end">
 						“There is nothing so useless as doing efficiently that which should

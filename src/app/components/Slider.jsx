@@ -1,13 +1,26 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
-export const Slider = ({ data }) => {
+export const Slider = ({ images }) => {
 	return (
-		<div className="w-full py-8 flex gap-6 items-center overflow-x-scroll">
-			{data.map((item, index) => (
-				<Image key={index} src={item.url} width={360} height={270} alt="cert" />
-			))}
-		</div>
+		<PhotoProvider>
+			<div className="w-full py-8 flex gap-6 items-center overflow-x-scroll">
+				{images.map((image, index) => (
+					<PhotoView key={index} src={image.url}>
+						<Image 
+							key={index}
+							className="cursor-pointer"
+							src={image.url}
+							width={360}
+							height={270}
+							alt={image.name}
+							title={image.name}
+						/>
+					</PhotoView>
+				))}
+			</div>
+		</PhotoProvider>
 	);
 };
 

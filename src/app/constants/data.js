@@ -176,38 +176,62 @@ export const tech_stack = [
 export const certificates = [
 	{
 		id: "1",
+		name: "Project Management Professional",
 		url: "/images/pmp.png",
 	},
 	{
 		id: "2",
+		name: "HTML and CSS in Depth",
 		url: "/images/html_css_in_depth.png",
 	},
 	{
 		id: "3",
+		name: "Basic React",
 		url: "/images/react_basic.png",
 	},
 	{
 		id: "4",
+		name: "Advanced React",
 		url: "/images/advanced_react.png",
 	},
 	{
 		id: "5",
+		name: "Version Control",
 		url: "/images/version_control.png",
 	},
 	{
 		id: "6",
+		name: "APIs",
 		url: "/images/apis.png",
 	},
 	{
 		id: "7",
+		name: "Python Data Structure",
 		url: "/images/python_data_structure.png",
 	},
 	{
 		id: "8",
+		name: "Python for Everyone",
 		url: "/images/python_for_everybody.png",
 	},
 	{
 		id: "9",
+		name: "Django Framework",
 		url: "/images/django_framework.png",
+	},
+	{
+		id: "10",
+		name: "Python for Data Science, AI & Development",
+		url: "/images/Python for Data Science, AI & Development.png",
+	},
+	{
+		id: "11",
+		name: "Developing AI Application with Python and Flask",
+		url: "/images/Developing AI Application with Python and Flask.png",
+	},
+	{
+		id: "12",
+		name: "Developing Back-End Apps with Node.js and Express",
+		url: "/images/Developing Back-End Apps with Node.js and Express.png",
 	},
 ];

@@ -1,7 +1,8 @@
 "use client";
 import React, { useRef } from "react";
-import { hero_data } from "../constants/data";
 import { motion, useInView } from "framer-motion";
+
+import { hero_data } from "../constants/data";
 
 const AboutSection = () => {
 	const ref = useRef(null);
@@ -53,7 +54,7 @@ const AboutSection = () => {
 
 				<div className="flex flex-col gap-2 w-full">
 					<h3 className="text-xl font-bold">Career</h3>
-					<ul className="space-y-4 w-full" role="list">
+					<ul className="space-y-4 w-full">
 						{[
 							["April, 2023", "Present", "Web Developer"],
 							["October, 2020", "April, 2023", "Software Engineer"],
@@ -62,7 +63,6 @@ const AboutSection = () => {
 							<li
 								key={index}
 								className="flex justify-between items-center w-full py-2 border-b border-gray-200"
-								role="listitem"
 							>
 								<time className="font-medium">{start}</time>
 								<span className="mx-4">-</span>

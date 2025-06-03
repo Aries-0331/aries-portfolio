@@ -1,3 +1,5 @@
+import { Montserrat, Luxurious_Roman } from "next/font/google";
+
 import {
 	Navbar,
 	Hero,
@@ -7,7 +9,7 @@ import {
 	Footer,
 	Achievements,
 } from "./components";
-import { Montserrat, Luxurious_Roman } from "next/font/google";
+import 'react-photo-view/dist/react-photo-view.css';
 
 const montserrat = Montserrat({
 	subsets: ["latin"],

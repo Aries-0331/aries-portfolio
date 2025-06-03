@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { Slider, Slider3D } from "./Slider";
+
 import { certificates } from "../constants/data";
-import { useWindowSize } from "../../hooks";
+
+import { Slider } from "./Slider";
 
 const Achievements = () => {
-	const { width } = useWindowSize();
 	return (
 		<section id="achieve" className="w-full pt-16 bg-[#f9f9f9]">
 			<div className="px-6 flex flex-col justify-evenly">
@@ -13,11 +13,7 @@ const Achievements = () => {
 					How I Improve Myself?
 				</h2>
 
-				{width > 768 ? (
-					<Slider3D data={certificates} />
-				) : (
-					<Slider data={certificates} />
-				)}
+				<Slider images={certificates} />
 			</div>
 		</section>
 	);

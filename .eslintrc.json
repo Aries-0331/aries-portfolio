@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": ["import"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ],
+    "react-hooks/exhaustive-deps": "warn",
+    "indent": ["error", 2, {
+      "SwitchCase": 1,
+      "VariableDeclarator": "first",
+      "MemberExpression": 1,
+      "FunctionDeclaration": { "parameters": "first" },
+      "FunctionExpression": { "parameters": "first" },
+      "ArrayExpression": "first",
+      "ObjectExpression": "first"
+    }],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2]
+  }
 }
